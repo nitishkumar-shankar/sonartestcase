@@ -1,0 +1,12 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Input Atom > matches the snapshot 1`] = `
+<DocumentFragment>
+  <input
+    data-testid="custom-input"
+    placeholder="Enter your name"
+    type="text"
+    value=""
+  />
+</DocumentFragment>
+`;
