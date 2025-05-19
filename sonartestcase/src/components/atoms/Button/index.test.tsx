@@ -14,4 +14,10 @@ describe('AppButton', () => {
     fireEvent.click(screen.getByText('Submit'));
     expect(mockFn).toHaveBeenCalledTimes(1);
   });
+
+  it('does not throw an error when onClick is not provided', () => {
+    render(<AppButton label="Submit" />);
+    expect(screen.getByText('Submit')).toBeInTheDocument();
+    // Just rendering the button without onClick should not throw an error
+  });
 });
